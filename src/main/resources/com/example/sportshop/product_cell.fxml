@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="154.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="idcell" layoutX="-2.0" prefHeight="154.0" prefWidth="439.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="137.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox fx:id="box" prefHeight="137.0" prefWidth="268.0">
+               <children>
+                  <Spinner fx:id="quantitySpinner">
+                     <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="1" max="10" min="1" />
+                     </valueFactory>
+                  </Spinner>
+                  <Label fx:id="title" prefHeight="21.0" prefWidth="273.0" text="Label">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cost" prefHeight="26.0" prefWidth="263.0" text="Label" />
+                  <Label fx:id="have" prefHeight="27.0" prefWidth="268.0" text="Label">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></Label>
+                  <Label fx:id="description" prefHeight="43.0" prefWidth="260.0" text="Label" />
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

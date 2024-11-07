@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="405.0" maxWidth="602.0" minHeight="395.0" minWidth="593.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Authorization">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backstage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="194.0" layoutY="29.0" text="Авторизация">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login" layoutX="218.0" layoutY="138.0" />
+      <Label layoutX="270.0" layoutY="96.0" text="Логин">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="174.0" text="Пароль">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="enter" layoutX="228.0" layoutY="303.0" mnemonicParsing="false" onAction="#authorization" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #7ff0e8;" text="Войти" />
+      <Button layoutX="430.0" layoutY="360.0" mnemonicParsing="false" onAction="#registration" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #7ff0e8;" text="Зарегистрироваться" />
+      <PasswordField fx:id="password" layoutX="219.0" layoutY="223.0" />
+   </children>
+</AnchorPane>

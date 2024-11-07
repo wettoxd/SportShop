@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  mariadb:
+    image: mysql:8.0 # mariadb:11.5.2
+    ports:
+      - "13306:3306"
+    command:
+      --init-file=/data/application/init.sql
+    environment:
+      MYSQL_DATABASE: sportshop
+      MYSQL_USER: javafxTest
+      MYSQL_PASSWORD: changeme
+      MYSQL_ROOT_PASSWORD: roooot
+
+    volumes:
+      - C:/MariaDB:/var/lib/mysql
+      - C:/Users/wetto/Documents/JavaProjects/SportShop/database/init.sql:/data/application/init.sql
+
+#     network_mode: "host"

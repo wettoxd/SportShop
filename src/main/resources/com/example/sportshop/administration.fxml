@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="337.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Administration">
+   <children>
+      <ImageView fitHeight="369.0" fitWidth="570.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gears-1.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="table" layoutX="11.0" layoutY="66.0" prefHeight="201.0" prefWidth="533.0" />
+      <ComboBox fx:id="changetable" layoutX="400.0" layoutY="286.0" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #7ff0e8;" />
+      <Label layoutX="16.0" layoutY="23.0" prefHeight="36.0" prefWidth="169.0" text="Администрирование">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="268.0" prefHeight="17.0" prefWidth="95.0" text="выбор таблицы" />
+      <Button fx:id="addrecord" layoutX="258.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #9ee5b6;" text="добавить запись " />
+      <Button layoutX="11.0" layoutY="286.0" mnemonicParsing="false" onAction="#callStoredProcedure" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #7ff0e8;" text="Новая поставка!" />
+   </children>
+</AnchorPane>
