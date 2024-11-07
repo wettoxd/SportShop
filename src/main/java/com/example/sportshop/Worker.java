@@ -168,6 +168,7 @@ public class Worker {
             }
         }
         return filteredProducts;
+
     }
 
     public ObservableList<ProductData> filterByPrice(ObservableList<ProductData> products, boolean ascending) {
@@ -203,4 +204,5 @@ public class Worker {
         Newstage.setMaximized(false);
         Newstage.show();
     }
+
 }

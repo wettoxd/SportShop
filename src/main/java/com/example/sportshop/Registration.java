@@ -43,6 +43,7 @@ public class Registration {
             password.setText("");
             email.setText("");
 
+
         } else {
             Stage dialogStage = new Stage();
             dialogStage.getIcons().add(new Image(("file:icon.jpg")));

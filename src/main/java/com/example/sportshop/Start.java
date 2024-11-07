@@ -20,7 +20,6 @@ public class Start extends Application {
         stage.setResizable(false);
         stage.setMaximized(false);
     }
-
     public static void main(String[] args) {
         launch();
     }
